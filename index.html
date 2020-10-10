@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Pidales</title>
+    <!-- Libs -->
+    <link rel="stylesheet" href="libs/bootstrap-4.5.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/fontawesome-pro-5.13.0-web/css/all.min.css">
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container nav__container">
+            <nav class="navbar navbar-expand-lg">
+                <!-- Logo -->
+                <a class="nav-logo" href="#">
+                    <i class="far fa-hamburger"></i>
+                    Les Pidales
+                </a>
+                <!-- Button for hidden menu -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Menu -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="nav-social">
+                        <li class="nav-social_item"><a class="nav-social_link" href=""><i
+                                    class="fab fa-twitter"></i></a></li>
+                        <li class="nav-social_item"><a class="nav-social_link" href=""><i
+                                    class="fab fa-telegram"></i></a></li>
+                        <li class="nav-social_item"><a class="nav-social_link" href=""><i
+                                    class="fab fa-instagram"></i></a></li>
+
+                        <li class="nav-burger"><a class="nav-burger-link"><i class="nav-burger-i fas fa-bars"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <div class="header-content">
+            <div class="container header-content_container">
+                <h5 class="header-content__uptitle">Les Pidales Burgers</h5>
+                <h1 class="header-content__title">Заpidalим бургер?</h1>
+                <a class="header-content__link" href="#menu">Our Menu</a>
+            </div>
+        </div>
+
+        <div class="header__left">
+            <h4>Меню</h4>
+            <ul>
+                <li><a class="header__left_link" href="#!">Home
+                        <div class="header__left_link_div"></div>
+                    </a></li>
+                <li><a class="header__left_link" href="#!">Pages
+                        <div class="header__left_link_div"></div>
+                    </a></li>
+                <li><a class="header__left_link" href="#!">Our offer
+                        <div class="header__left_link_div"></div>
+                    </a></li>
+                <li><a class="header__left_link" href="#!">Galleries
+                        <div class="header__left_link_div"></div>
+                    </a></li>
+                <li><a class="header__left_link" href="#!">Blog
+                        <div class="header__left_link_div"></div>
+                    </a></li>
+                <li><a class="header__left_link" href="#!">Shop
+                        <div class="header__left_link_div"></div>
+                    </a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="service">
+            <div class="container service__container">
+                <div class="row justify-content-center">
+                    <div class="col-3">
+                        <div class="service__card">
+                            <img src="img/hamburger.png" alt="">
+                            <h3>Chicken Burgers</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="service__card">
+                            <img src="img/salad.png" alt="">
+                            <h3>veggie options</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="service__card">
+                            <img src="img/milkshake.png" alt="">
+                            <h3>milkshakes</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="service__card">
+                            <img src="img/cupcake.png" alt="">
+                            <h3>desserts</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="products">
+            <div class="container products__container">
+                <div class="product__burger" id="singer">
+                    <img src="img/burger1.png" alt="">
+                    <h3 class="product__burger_title">Singer</h3>
+                    <p class="product__burger_text">Мягкая булочка, нежное куриное филе (Halal)</p>
+
+                    <!-- Цена -->
+                    <div class="product__burger_price">
+                        <div class="product__burger_price-content">
+                            <!-- Минус -->
+                            <a class="product__burger_price-symbol" data-symbol="-">
+                                <i class="fal fa-minus"></i>
+                            </a>
+                            <!-- Количество -->
+                            <output class="product__burger_price-num">0</output>
+                            <!-- Плюс -->
+                            <a class="product__burger_price-symbol" data-symbol="+">
+                                <i class="fal fa-plus"></i>
+                            </a>
+                        </div>
+                        <!-- Общая цена -->
+                        <div class="product__burger-price"><span>0</span> сум</div>
+                    </div>
+
+                    <!-- Вызов начинок -->
+                    <a class="product__burger_filling">Выбрать начинки</a>
+
+                    <!-- <div class="product__burger_extra">
+                        <label class="product__burger_extra-label">
+        
+                            <input type="checkbox" class="product__burger_extra-checkbox" data-extra="salad">
+                            <span class="product__burger_extra-check"></span>
+                            Начинка из салата
+                        </label>
+                        <label class="product__burger_extra-label">
+                            <input type="checkbox" class="product__burger_extra-checkbox" data-extra="lettuce">
+                            <span class="product__burger_extra-check"></span>
+                            Салатный лист
+                        </label>
+                        <label class="product__burger_extra-label">
+                            <input type="checkbox" class="product__burger_extra-checkbox" data-extra="cheese">
+                            <span class="product__burger_extra-check"></span>
+                            Сыр
+                        </label>
+                    </div>
+
+                    <div class="product__burger_add">
+                        <label class="product__burger_add-label">
+                            <input type="checkbox" class="product__burger_add-checkbox" data-extra="sause">
+                            <span class="product__burger_add-check"></span>
+                            Добавить соус
+                        </label>
+                        <label class="product__burger_add-label">
+                            <input type="checkbox" class="product__burger_add-checkbox" data-extra="mayo">
+                            <span class="product__burger_add-check"></span>
+                            Добавить майонез
+                        </label>
+                    </div>
+
+                    <div class="main__product-kcall"><span>0</span> калорий</div> -->
+                </div>
+
+                <div class="product__burger" id="bigger">
+                    <img src="img/burger2.png" alt="">
+                    <h3 class="product__burger_title">Bigger</h3>
+                    <p class="product__burger_text">Крутая булочка, супер куриное филе (Halal)</p>
+
+                    <!-- Цена -->
+                    <div class="product__burger_price">
+                        <div class="product__burger_price-content">
+                            <!-- Минус -->
+                            <a class="product__burger_price-symbol" data-symbol="-">
+                                <i class="fal fa-minus"></i>
+                            </a>
+                            <!-- Количество -->
+                            <output class="product__burger_price-num">0</output>
+                            <!-- Плюс -->
+                            <a class="product__burger_price-symbol" data-symbol="+">
+                                <i class="fal fa-plus"></i>
+                            </a>
+                        </div>
+                        <!-- Общая цена -->
+                        <div class="product__burger-price"><span>0</span> сум</div>
+                    </div>
+
+                    <!-- Вызов начинок -->
+                    <a class="product__burger_filling">Выбрать начинки</a>
+                </div>
+            </div>
+
+            <div class="order">
+                <a class="order__link">Заказать!</a>
+            </div>
+
+            <section class="hidden">
+                <div class="hidden__list">
+                    <h3 class="hidden__title">Ваш заpidaleнный заказ:</h3>
+                    <div class="hidden__text">
+                        <ul>
+                            <li class="hidden__text_burgers">0</li>
+                            <li class="hidden__text_kcal">0</li>
+                            <li class="hidden__text_price">0</li>
+                        </ul>
+                    </div>
+                    <div class="hidden__btn_div">
+                        <button class="hidden__button">Заказать!</button>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__right">
+                <a class="footer__logo" href="#">
+                    <i class="far fa-hamburger"></i>
+                    Les Pidales
+                </a>
+            </div>
+
+            <p class="footer__center">
+                Pidalим бургеры с вами уже 20 лет
+            </p>
+
+            <ul class="footer__left">
+                <li><a href="#!">Home</a></li>
+                <li><a href="#!">Pages</a></li>
+                <li><a href="#!">Burgers</a></li>
+                <li><a href="#!">Contacts</a></li>
+            </ul>
+        </div>
+    </footer>
+
+
+    <!-- Scripts -->
+    <script src="libs/jquery-3.5.1.slim.min.js"></script>
+    <script src="libs/popper.min.js"></script>
+    <script src="libs/bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
